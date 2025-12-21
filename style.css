@@ -1,0 +1,255 @@
+* {
+        /* margin: 0; */
+        /* padding: 0; */
+        border: 0;
+        /* outline: 0; */
+        /* font-size: 100%; */
+        vertical-align: baseline;
+        background: transparent;
+    }
+
+html{
+	scroll-behavior: smooth;
+}
+
+
+body {
+    background-color:var(--purewhite);
+    margin: 0;
+    margin-top: -2%;
+    font-family: 'Lato', sans-serif;
+}
+
+a{
+	color: #0332d8;
+	text-decoration: none;
+}
+
+a:hover{
+	color: #c35e37;
+}
+
+button a:hover{
+	text-decoration-color: white;
+}
+
+.cta-button {
+    background-color: #c35e37;
+    color: ghostwhite;
+    border: 0px;
+    border-radius: 4px;
+    min-height: 36px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: .25px;
+    text-align: center;
+    padding: 8px 16px;
+    white-space: break-spaces;
+    word-break: break-word;
+    font-family: Google Sans Text, Google Sans;
+}
+
+a.cta-button:hover{
+	color: ghostwhite;
+}
+
+
+
+@media only screen and (min-width: 992px)
+
+{
+
+.main {
+    height: 100vh;
+    background-image: url("images/Untitled design.png");
+    background-size: cover;
+    background-position: center;
+    
+}
+
+h1 {
+    padding-top: 25%;
+    padding-left: 35%;
+    /* ß */
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    white-space: nowrap; /* Keeps the content on a single line */
+    /* margin: 0 auto; Gives that scrolling effect as the typing happens */
+    letter-spacing:normal; /* Adjust as needed */
+    animation: 
+        typing 2s steps(13),
+        blink-caret .75s step-end infinite;
+}
+
+/* @keyframes slidein {
+	from {
+	  margin-left: -500px;
+	} 
+	to {
+	  margin-left: 0px;
+	}
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 13ch }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: black; }
+} */
+
+h3#about-me {
+    padding-top: 10%;
+    font-size: 1.5rem; 
+}
+
+h3#editing-services {
+    padding-top: 15%;
+    font-size: 1.5rem; 
+}
+
+h3#dissertation-coaching {
+    padding-top: 0%;
+    font-size: 1.5rem; 
+}
+
+h3#projects {
+    padding-top: 20%;
+    font-size: 1.5rem; 
+}
+
+h3#contact {
+    padding-top: 30%;
+    font-size: 1.5rem; 
+}
+
+.about-me {
+    height: 100vh;
+    background-image: url("images/smallbluedesign.png");
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position:right;
+    padding-left: 5%;
+    padding-right: 35%;
+    font-size: 1rem; 
+}
+
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+}
+
+
+
+.menu {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+}
+
+.menu li {
+  float: left;
+}
+
+.menu li a {
+  display: block;
+  color: #0332d8;
+  text-align: center;
+  padding: 14px 14px;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  background-color: white;
+  color: #c35e37;
+}
+
+img {
+    border-radius: 4px;
+    float: left;
+    padding: 10px;
+    width: 167px;
+}
+.editing-services {
+    height: 100vh;
+    background-image: url("images/orangedesign.png");
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position:left;
+    padding-left: 20%;
+    padding-right: 10%;
+    font-size: 1rem; 
+}
+
+.dissertation-coaching {
+    height: 100vh;
+    background-image: url("images/smallbluerightdesign.png");
+    background-size:90%;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: bottom;
+    padding-top: 5%;
+    padding-right: 30%;
+    padding-left: 5%;
+    font-size: 1rem; 
+   
+}
+
+.coaching-services{
+    font-size: .75rem;
+}
+
+.projects {
+    height: 100vh;
+    background-image: url("images/orangedesigndiagonal.png");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: bottom;
+    padding-top: 10%;
+    padding-left: 25%;
+    font-size: 1rem; 
+}
+
+.contact {
+    height: 100vh;
+    background-image: url("images/bigbluedesign.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    padding-top: 10%;
+    padding-left: 35%;
+    font-size: 1rem; 
+}
+
+/* .services-list {
+    padding-left: 10%;
+} */
+
+.menu {
+    list-style-type: none;
+    max-width: fit-content;
+    max-height: 100vh;
+    margin-left: 35%;
+    margin-right: auto;
+    margin-bottom: auto;
+    font-size: 1.5rem;
+}
+}
+
+@media only screen and (min-width: 600px)
+{
+
+}
+
+@media only screen and (min-width: 768px)
+{
+
+}
+
+
+
+
+
