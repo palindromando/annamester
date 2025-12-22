@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css"/>
-    <script defer src="/js/script.js"></script>
+    <!-- <script defer src="/script.js"></script> -->
     <script src="https://kit.fontawesome.com/4abf348c45.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
@@ -19,13 +20,38 @@
 <!-- end Google Calendar Appointment Scheduling -->
 </head>
 <body>
+    <div class="topnav">
+        <a href="#home" class="active">hi, i'm anna.</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+  <!-- Navigation links (hidden by default) -->
+        <div class="hamburger" id="myLinks">
+            <a href="#about-me">about me</a>
+            <a href="#editing-services">editing services</a>
+            <a href="#dissertation-coaching">dissertation coaching</a>
+            <a href="#resources">resources</a>
+            <a href="#contact">contact</a>
+        </div>       
+    </div>
+    <script>
+        function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+        }
+    </script>
     <div class="main">
         <h1>hi, i'm anna.</h1>
         <ul class="menu">
             <li><a href="#about-me">about me</a></li>
             <li><a href="#editing-services">editing services</a></li>
             <li><a href="#dissertation-coaching">dissertation coaching</a></li>
-            <li><a href="#projects">projects</a></li>
+            <li><a href="#resources">resources</a></li>
+            <!-- <li><a href="#projects">projects</a></li> -->
             <li><a href="#contact">contact</a></li>
         </ul>
     </div>
@@ -35,7 +61,7 @@
             <img src="./images/IMG_20230706_161454161.jpg" width="167" height="167" alt="headshot of anna mester">
             <p>Dr. Anna Mester’s extensive academic experience spans roles in teaching, research, and faculty development. </p>
             <p>As an educator, she advocates for multilingual, immigrant, and first-generation students, while working to advance equity-driven initiatives at an institutional level. She has also worked in faculty development roles, supporting faculty, postdocs, and graduate students with drafting compelling funding proposals, ethically engaging with community partners, as well as effectively communicating research with community partners and public audiences.</p>
-            <p>Anna’s work is influenced by her extensive experience abroad. As a practitioner of community engagement, she facilitated creative writing and arts workshops in prisons in Michigan and Brazil. Previously a Fulbright-Hays Scholar in Mozambique, Spain, and Portugal, her travels and research also included field work in Cabo Verde, Guinea-Bissau, and Brazil. These experiences continue to inspire her multicultural and pluralistic approach to her work.</p>
+            <p>Anna’s work is influenced by her extensive experience abroad. As a practitioner of community engagement, she facilitated creative writing and arts workshops in prisons in Michigan and Brazil. Previously a Fulbright-Hays scholar in Mozambique, Spain, and Portugal, her travels and research also included field work in Cabo Verde, Guinea-Bissau, and Brazil. These experiences continue to inspire the multicultural and pluralistic approach to her work.</p>
             <p>She is fluent in 4 languages and holds a B.A. <i>summa cum laude</i> in Romance Languages and Cultures and Critical Social Thought from <a href="https://www.mtholyoke.edu/">Mount Holyoke College</a>. She earned her Ph.D. in Romance Languages and Literatures with an African Studies concentration from the <a href="https://umich.edu/">University of Michigan</a>.</p>
             <p>In her free time, Anna enjoys reading, writing, sewing, and folk embroidery–and when the weather is nice she goes gravel cycling and bike packing. </p>
         </div>
@@ -64,7 +90,7 @@
             <p><b>Developing a sustainable strategy for completing your dissertation</b></p>
             <ul class="services-list">
                 <li>Time management skills to help structure your research and writing time</li>
-                <li>Cohesive strategy and project management skills to juggle the moving pieces of your large-scale dissertation project with other professional responsibilities</li>
+                <li>Cohesive strategy and project management skills to juggle the moving pieces of your large-scale dissertation project</li>
                 <li>Stakeholder management skills to support relationship development with advisors, collaborators, and other non-academic partners</li>
             </ul>
             <p><b>Transforming your dissertation into a book-length monograph</b></p>
@@ -86,17 +112,21 @@
             </div>
             <p>Whether you need support for 4 weeks or 6+ months, let’s discuss how we can work together. My services are determined on a sliding scale, I’m committed to supporting graduate students and early-career scholars. <a href="#contact">Don’t hesitate to reach out</a>.</p>
 	    </div>
+        <div class="resources">
+            <h3 id="resources">resources.</h3>
 
-        <div class="projects">
+            <h4 class="resources-heading">more soon.</h4>
+		</div>
+        <!-- <div class="projects">
             <h3 id="projects">projects.</h3>
 
             <h4 class="project-heading">more soon.</h4>
-		</div>
+		</div> -->
         <div class="contact">
             <h3 id="contact">contact.</h3>
-            <p>I would love to hear from you!</p>
+            <!-- <p>I would love to hear from you!</p> -->
             <div id="cta-container">
-                <button class="cta-button"><a class="cta-button" href="mailto:annamester@gmail.com">Email me</a></button>
+                <button class="cta-button"><a class="cta-button" href="mailto:annamester@gmail.com">Send me a message</a></button>
                 <script>
                     (function() {
                     var target = document.currentScript;
